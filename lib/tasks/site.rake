@@ -11,14 +11,14 @@ require 'middleman-gh-pages'
 # end
 
   task before_hook: :environment do
-    # ENV['RAKE_ENV']['REMOTE_NAME'] = 'artfolga/artfolga.middleman'
-    ENV['RAKE_ENV']['BRANCH_NAME'] = 'master_pages'
-    puts ENV['RAKE_ENV']['BRANCH_NAME']
+    # ENV['REMOTE_NAME'] = 'artfolga/artfolga.middleman'
+    # ENV['BRANCH_NAME'] = 'master_pages'
+    # puts ENV['BRANCH_NAME']
   end
-  task build:   :before_hook
-  task publish: :before_hook
+  # task build:   :before_hook
+  # task publish: :before_hook
 
-Rake::Task['build'].enhance(['after_build_hook'])
+# Rake::Task['build'].enhance(['after_build_hook'])
 
 # Rake::Task['build'].enhance do
 #   `echo 'artfolga.ru' > CNAME`

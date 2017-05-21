@@ -71,3 +71,5 @@ gem 'bitters', '~> 0.10.1', :require => false
 # built on top of Bourbon, Bitters, and Neat.
 #(Currently only for the app frame)
 gem 'refills', '~> 0.0.2', :require => false
+
+gem 'middleman-gh-pages'
